@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import styles from './index/Index.module.css'
+import styles from '../styles/Index.module.css'
 
 import dynamic from 'next/dynamic';
 
-const MapWithNoSSR = dynamic(() => import('./components/Map/Map'), {
+const MapWithNoSSR = dynamic(() => import('../components/Map/Map'), {
     ssr: false,
 });
 
